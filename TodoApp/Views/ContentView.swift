@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showAddTaskView = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack(alignment: .bottomTrailing) {
+            TaskView()
+            
+            SmallAddButton()
+                .padding()
+                .onTapGesture {
+                    showAddTaskView.toggle()
+                }
+        }
+        .sheet(isPresented: $showAddTaskView) {
+            AddTaskView()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+        .background(Color(hue: 0.739, saturation: 0.602, brightness: 0.814))
     }
 }
 

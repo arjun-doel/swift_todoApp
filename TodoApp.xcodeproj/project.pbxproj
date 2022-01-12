@@ -17,6 +17,7 @@
 		723097EA278F6DFE0051066C /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723097E9278F6DFE0051066C /* TaskView.swift */; };
 		723097EE278F70E30051066C /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723097ED278F70E30051066C /* TaskRow.swift */; };
 		723097F0278F748F0051066C /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723097EF278F748F0051066C /* AddTaskView.swift */; };
+		724F5585278F76C2007C1E95 /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F5584278F76C2007C1E95 /* SmallAddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		723097E9278F6DFE0051066C /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		723097ED278F70E30051066C /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		723097EF278F748F0051066C /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		724F5584278F76C2007C1E95 /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				723097ED278F70E30051066C /* TaskRow.swift */,
+				724F5584278F76C2007C1E95 /* SmallAddButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				723097EA278F6DFE0051066C /* TaskView.swift in Sources */,
 				723097F0278F748F0051066C /* AddTaskView.swift in Sources */,
 				723097C2278F6DB50051066C /* ContentView.swift in Sources */,
+				724F5585278F76C2007C1E95 /* SmallAddButton.swift in Sources */,
 				723097C0278F6DB50051066C /* TodoAppApp.swift in Sources */,
 				723097EE278F70E30051066C /* TaskRow.swift in Sources */,
 			);
