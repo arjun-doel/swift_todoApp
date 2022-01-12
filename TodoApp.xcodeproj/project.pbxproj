@@ -18,6 +18,9 @@
 		723097EE278F70E30051066C /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723097ED278F70E30051066C /* TaskRow.swift */; };
 		723097F0278F748F0051066C /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723097EF278F748F0051066C /* AddTaskView.swift */; };
 		724F5585278F76C2007C1E95 /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F5584278F76C2007C1E95 /* SmallAddButton.swift */; };
+		724F5588278F7BAA007C1E95 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 724F5587278F7BAA007C1E95 /* Realm */; };
+		724F558A278F7BAA007C1E95 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 724F5589278F7BAA007C1E95 /* RealmSwift */; };
+		724F558C278F7BCB007C1E95 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F558B278F7BCB007C1E95 /* RealmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		723097ED278F70E30051066C /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		723097EF278F748F0051066C /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		724F5584278F76C2007C1E95 /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
+		724F558B278F7BCB007C1E95 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724F558A278F7BAA007C1E95 /* RealmSwift in Frameworks */,
+				724F5588278F7BAA007C1E95 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,7 @@
 				723097BF278F6DB50051066C /* TodoAppApp.swift */,
 				723097C3278F6DB50051066C /* Assets.xcassets */,
 				723097C5278F6DB50051066C /* Preview Content */,
+				724F558B278F7BCB007C1E95 /* RealmManager.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -171,6 +178,10 @@
 			dependencies = (
 			);
 			name = TodoApp;
+			packageProductDependencies = (
+				724F5587278F7BAA007C1E95 /* Realm */,
+				724F5589278F7BAA007C1E95 /* RealmSwift */,
+			);
 			productName = TodoApp;
 			productReference = 723097BC278F6DB50051066C /* TodoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -243,6 +254,9 @@
 				Base,
 			);
 			mainGroup = 723097B3278F6DB50051066C;
+			packageReferences = (
+				724F5586278F7BAA007C1E95 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 723097BD278F6DB50051066C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,6 +304,7 @@
 				723097C2278F6DB50051066C /* ContentView.swift in Sources */,
 				724F5585278F76C2007C1E95 /* SmallAddButton.swift in Sources */,
 				723097C0278F6DB50051066C /* TodoAppApp.swift in Sources */,
+				724F558C278F7BCB007C1E95 /* RealmManager.swift in Sources */,
 				723097EE278F70E30051066C /* TaskRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +632,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		724F5586278F7BAA007C1E95 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		724F5587278F7BAA007C1E95 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 724F5586278F7BAA007C1E95 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		724F5589278F7BAA007C1E95 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 724F5586278F7BAA007C1E95 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 723097B4278F6DB50051066C /* Project object */;
 }
